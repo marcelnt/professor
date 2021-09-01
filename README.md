@@ -21,6 +21,8 @@ Neste repositório deixarei todos os meus exercicios que realizo em aula com os 
           <li> Box-Model</li>
           <li> Float em containers</li>
           <li> Formatando imagens de fundo</li>
+          <li> Criando menu com listas</li>
+          <li> Menu Drop Down</li>
           <li> Codificando um site utilizando divs</li>
         </ul>  
   
