@@ -1,0 +1,102 @@
+.titulo{
+    width: 600px; /* + 15left + 15right de borda = 630px */
+    height: 70px; /* + 15top + 15bottom de borda + 30padding-top = 130px */
+    
+/*    border: tipo grossura da linha cor*/
+    border: outset 15px orange;
+    
+/*    
+    Tipos de Borda:
+        solid - sólida
+        dotted - pontilhada
+        dashed - tracejada
+        double - borda dupla
+        groove - efeito 3D
+        ridge - efeito 3D
+        inset - efeito 3D
+        outset - efeito 3D
+    
+*/
+    /*Permite criar arredondamento da borda*/
+    border-radius: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 5px;
+    border-bottom: dotted 10px;
+    border-left-color: blue;
+    
+    
+    background-color: cornflowerblue;
+    text-align: center;
+    
+    /*padding - espaçamento interno de uma caixa
+    
+        padding-top - espaço interno no topo do elemento
+        padding-left - espaço interno na esquerda do elemento
+        padding-right - espaço interno na direita do elemento
+        padding-bottom - espaço interno na parte inferior do elemento
+    
+    Obs: Sempre que usar o padding, precisamos subtrair do tamanho do valor atribuido ao padding do elemento
+    
+    */
+    
+    padding-top: 30px;
+    
+    /*margin - permite criar espaços externo no elemento*/
+    
+    /*Permite criar espaços para alinhar este elemento (Eixo X e Y )*/
+    margin-left: 100px;
+    margin-top: 100px;
+    
+    /*Permite criar espaços para empurrar elementos para o lado ou para baixo*/
+    margin-right: 100px;
+    margin-bottom: 100px;
+    
+    /*Permite centralizar qualquer elemento na tela*/
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.texto{
+    font-family: serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.destaque{
+    font-weight: bold;
+    color: red;
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.lista{
+    width: 1300px;
+    height: 215px;
+    border: solid 1px #000000;
+}
+
+.itens{
+    width: 290px;
+    height: 35px;
+    background-color: #000000;
+    font-family: verdana;
+    color: red;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    list-style: url(../imagens/icone-certo_pequeno.png);
+    
+    /*Desativa o marcador*/
+    list-style: none;
+    
+    /*Permite colocar a li lado a lado*/
+    float: left;
+    
+}

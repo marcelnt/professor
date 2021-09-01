@@ -1,0 +1,98 @@
+body{
+    background-color: orangered;
+}
+
+#conteudo1{
+    width: 250px;
+    height: 250px;
+    border: solid 1px #000000;
+    background-color: indianred;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#conteudo2{
+    width: 250px;
+    height: 230px;
+    border: solid 1px #000000;
+    background-color: darkorange;
+    
+    /*Serve para colocar um elemnto ao lado de outro elemento. 
+    OBS: para que isso funcione, o elemento anterior deve estar configurado com o float também */
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#conteudo3{
+    width: 250px;
+    height: 230px;
+    border: solid 1px #000000;
+    background-color: blueviolet;
+    
+    /*Serve para limpar o float aplicado no ultimo elemento
+    
+    clear: left - limpa a float anterior caso tenha sido left
+    
+    clear: right - limpa a float anterior caso tenha sido right
+    
+    clear: both - limpa a float anterior independente se foi left ou right
+    
+    */
+    clear: both;
+    float: left;
+    
+    text-align: center;
+    padding-top: 20px;
+    
+    margin-right: 10px;
+}
+
+#conteudo4{
+    width: 250px;
+    height: 250px;
+    border-bottom: solid 10px #000000;
+    background-color: aquamarine;
+    float: left;
+}
+
+.imagens{
+    width: 200px;
+    height: 200px;
+    border: solid 5px #000000;
+}
+
+.texto{
+    font-family: verdana;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.galeria{
+    width: 100px;
+    height: 130px;
+    background-color: brown;
+    float: left;
+    margin-right: 25px;
+}
+
+
+
+/*Estilizando uma Tabela de 02 linhas e 01 coluna*/
+#tabelaConteudo{
+    width: 500px;
+    height: 500px;
+    border: solid 1px #000000;
+}
+
+.linha{
+    height: 250px;
+    border: solid 1px #000000;
+}
+
+.coluna{
+    width: 500px;
+    border: solid 1px #000000;
+}

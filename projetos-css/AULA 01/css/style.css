@@ -1,0 +1,45 @@
+/*Padronização da tag h1 para titulos principais */
+h1{
+    font-family: arial;
+    color: #000fff;
+    text-align: center;
+}
+
+
+/*
+Exemplo de referencia utilizando o ID
+
+Obs: quando utilizamos o ID, não podemos referenciar em mais de um elemento no HTML
+*/
+#tituloPrincipal {
+    font-family: "comic sans ms";
+    font-size: 30px;
+    color: darkred;
+    
+}
+
+
+/* Exemplo de referencia pela classe 
+
+Obs: a mesma classe pode ser utilizada em diverrsos elementos HTML, ao contrario do ID
+*/
+
+.textos{
+    font-family: verdana;
+    color: chocolate;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
