@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title> AULA 06 - TABELAS </title>
+	</head>
+	<body bgcolor="#000000">
+	<!-- 
+		<table> indica a criação de uma tabela
+			<table width - Define a largura da tabela
+				   height - Define a altura da tabela
+				   border - Define uma borda na tabela
+				   align  - Define o alinhamento horizontal 
+				   (left, center e right)
+				   bgcolor - Define uma cor de fundo para a tabela
+				   background - Define uma imagem de fundo na tabela
+				   cellspacing - Define o espaçamento entre as celulas da tabela
+				   cellpadding - Define o espaçamento interno na celula, para o conteudo não ficar encostado nas margens
+				   
+				   
+		<tr> indica a criação de uma linha (sempre precisa estar dentro da table)
+			<tr height - representa a altura da linha
+				align - define o alinhamento horizontal da linha
+				valign - define o alinhamento vertical (top, middle, bottom)
+				bgcolor - permite colocar uma cor em todas as celulas da linha
+				background - permite colocar uma imagem de fundo em todas as celulas da linha
+			
+		<td> indica a criação de uma coluna (Sempre precisa estar dentro do tr)
+			<td width - largura de uma celula
+			    align - define o alinhamento horizontal da celula
+				valign - define o alinhamento vertical da celula (top, middle, bottom)
+				bgcolor - permite colocar uma cor em uma celula
+				background - permite colocar uma imagem de fundo em uma celula
+				
+				colspan - permite fazer mesclagem de celulas (colunas). Obs: sempre que fizer a mesclagem é necessário apagar as celulas que irão sobrar.
+					Ex: Se eu tenho 3 colunas e quero mesclar 2, devo apagar 1.
+					Se eu tenho 5 colunas e quero mesclar 4, devo apagar 3.
+						
+				rowspan - permite fazer mesclagem de celulas (colunas) entre linhas. 
+				Obs: sempre que fizer a mesclagem é necessário apagar as celulas que irão sobrar, porém essas celulas serão em linhas diferentes.
+					Ex: Se eu tenho 3 celulas e quero mesclar 2, devo apagar 1 celula da linha posterior.
+					Se eu tenho 5 celulas e quero mesclar 4, devo apagar 3 celulas das linhas posteriores.
+	-->
+		<table width="700" height="900" border="1" align="center" bgcolor="orange" cellspacing="20" cellpadding="10">
+			<tr height="300" align="left" valign="bottom" bgcolor="#cc6600" > <!-- Linha 01 -->
+				<td width="300" align="center" valign="top"> <!-- Linha 01 coluna 01 -->
+					<img src="imagens/imagem01.jpg" width="250" height="200">
+				</td>
+				<td width="300" align="right"> <!-- Linha 01 coluna 02 -->
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+				</td>
+				
+			</tr>
+			<tr height="300"> <!-- Linha 02 -->
+				<td width="300" valign="top" bgcolor="#00ccdd"><!-- Linha 02 coluna 01 -->
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+				</td>
+				<td width="300" background="imagens/imagem01.jpg"><!-- Linha 02 coluna 02 -->
+					<img src="imagens/imagem01.jpg" width="250" height="200">
+				</td>
+			</tr>
+			<tr height="100"> <!-- Linha 03 -->
+				<td width="300" colspan="2">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada 
+				</td>
+			
+			</tr>
+			<tr height="100"> <!-- Linha 04 -->
+				<td width="300"> <!-- Linha 04 coluna 01 -->
+				
+				</td>
+				<td width="400" rowspan="2"><!-- Linha 04 coluna 02 -->
+				
+				</td>
+			</tr>
+			<tr height="100"> <!-- Linha 05 -->
+				<td width="300"> <!-- Linha 05 coluna 01 -->
+				
+				</td>
+				
+			</tr>
+		</table>
+	</body>
+</html>
