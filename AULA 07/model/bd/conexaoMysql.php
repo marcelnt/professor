@@ -28,12 +28,10 @@ const DATABASE = 'dbcontatos';
 
  }
 
- function closeConexaoMysql($conexao)
+ //Fecha a conexão com o BD Mysql
+ function fecharConexaoMysql($conexao)
  {
-    if (mysqli_close($conexao))
-        return true;
-    else
-        return false;
+    mysqli_close($conexao);
  }
 
 

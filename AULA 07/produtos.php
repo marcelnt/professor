@@ -1,20 +1,3 @@
-<?php 
-    if(session_status())
-    {
-        if(!empty($_SESSION['dadosContato']))
-        {
-            $id = $_SESSION['dadosContato'][0]['id'];
-            $nome = $_SESSION['dadosContato'][0]['nome'];
-            $telefone = $_SESSION['dadosContato'][0]['telefone'];
-            $celular = $_SESSION['dadosContato'][0]['celular'];
-            $email = $_SESSION['dadosContato'][0]['email'];
-            $obs = $_SESSION['dadosContato'][0]['obs'];
-
-            unset($_SESSION['dadosContato']);
-            
-        }
-    }    
-?>
 <!DOCTYPE>
 <html lang="pt-br">
     <head>
@@ -32,14 +15,14 @@
                 
             </div>
             <div id="cadastroInformacoes">
-                <form  action="router.php?component=contatos&action=inserir" name="frmCadastro" 
+                <form  action="router.php?component=produtos&action=inserir" name="frmCadastro" 
                 method="post" >
                     <div class="campos">
                         <div class="cadastroInformacoesPessoais">
                             <label> Nome: </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <input type="text" name="txtNome" value="<?= isset($nome)?$nome:null ?>" placeholder="Digite seu Nome" maxlength="100">
+                            <input type="text" name="txtNome" value="" placeholder="Digite seu Nome" maxlength="100">
                         </div>
                     </div>
                                      
@@ -48,7 +31,7 @@
                             <label> Telefone: </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <input type="tel" name="txtTelefone" value="<?= isset($telefone)?$telefone:null ?>">
+                            <input type="tel" name="txtTelefone" value="">
                         </div>
                     </div>
                     <div class="campos">
@@ -56,7 +39,7 @@
                             <label> Celular: </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <input type="tel" name="txtCelular" value="<?= isset($nome)?$telefone:null ?>">
+                            <input type="tel" name="txtCelular" value="">
                         </div>
                     </div>
                    
@@ -66,7 +49,7 @@
                             <label> Email: </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <input type="email" name="txtEmail" value="<?= isset($email)?$email:null ?>">
+                            <input type="email" name="txtEmail" value="">
                         </div>
                     </div>
                     <div class="campos">
@@ -74,7 +57,7 @@
                             <label> Observações: </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <textarea name="txtObs" cols="50" rows="7"><?= isset($obs)?$obs:null ?></textarea>
+                            <textarea name="txtObs" cols="50" rows="7"></textarea>
                         </div>
                     </div>
                     <div class="enviar">
@@ -99,35 +82,18 @@
                     <td class="tblColunas destaque"> Opções </td>
                 </tr>
                 
-               <?php 
-                    //import do arquivo da controller para solicitar a listagem dos dados
-                    require_once('controller/controllerContatos.php');
-                    //Chama a função que vai retornar os dados de contatos
-                    $listContato = listarContato();
-                    //estrutura de repetição para retorar os dados do array 
-                    //e printar na tela
-                    foreach($listContato as $item)
-                    {
-                    ?>
-                        <tr id="tblLinhas">
-                            <td class="tblColunas registros"><?=$item['nome']?></td>
-                            <td class="tblColunas registros"><?=$item['celular']?></td>
-                            <td class="tblColunas registros"><?=$item['email']?></td>
-                        
-                            <td class="tblColunas registros">
-                                <a href = "router.php?component=contatos&action=buscar&id=<?=$item['id']?>">
-                                    <img src="img/edit.png" alt="Editar" title="Editar" class="editar">
-                                </a>
-                                
-                                <a href = "router.php?component=contatos&action=deletar&id=<?=$item['id']?>">
-                                    <img src="img/trash.png" alt="Excluir" title="Excluir" class="excluir">
-                                </a>
-                                <img src="img/search.png" alt="Visualizar" title="Visualizar" class="pesquisar">
-                            </td>
-                        </tr>
-                    <?php 
-                        }
-                    ?>
+               
+                <tr id="tblLinhas">
+                    <td class="tblColunas registros"></td>
+                    <td class="tblColunas registros"></td>
+                    <td class="tblColunas registros"></td>
+                   
+                    <td class="tblColunas registros">
+                            <img src="img/edit.png" alt="Editar" title="Editar" class="editar">
+                            <img src="img/trash.png" alt="Excluir" title="Excluir" class="excluir">
+                            <img src="img/search.png" alt="Visualizar" title="Visualizar" class="pesquisar">
+                    </td>
+                </tr>
             </table>
         </div>
     </body>
